@@ -1,0 +1,385 @@
+/* colors */
+
+:root {
+  --main-color: #a99c8a;
+  --secondary-color: #2d4d5c;
+  --complementary-color: #1f3a4b;
+  --complementary-color2: #3a5c6c;
+  --muted-color: #746b60;
+  --accent-color: #ffb400;
+  --accent-color2: #c70039;
+}
+
+.main-color {
+  background-color: var(--main-color) !important;
+}
+
+.secondary-color {
+  background-color: var(--secondary-color) !important;
+  background-image: linear-gradient(
+    to left,
+    var(--secondary-color),
+    var(--complementary-color2)
+  );
+}
+
+.complementary-color {
+  background-color: var(--complementary-color) !important;
+}
+.complementary-color3 {
+  background-image: linear-gradient(
+    to right,
+    rgba(238, 238, 238, 0.1),
+    rgba(41, 104, 143, 0.1)
+  ) !important;
+}
+
+.complementary-color2 {
+  background-color: var(--complementary-color2) !important;
+}
+
+.accent-color2 {
+  background-color: var(--accent-color2) !important;
+}
+
+.muted-color {
+  background-color: var(--muted-color) !important;
+}
+
+.accent-color {
+  background-color: var(--accent-color) !important;
+}
+
+.main-text {
+  color: var(--main-color) !important;
+}
+
+.secondary-text {
+  color: var(--secondary-color) !important;
+}
+
+.muted-text {
+  color: var(--muted-color) !important;
+}
+
+.accent-text {
+  color: var(--accent-color) !important;
+}
+
+.complementary-text {
+  color: var(--complementary-color);
+}
+
+.complementary-text2 {
+  color: var(--complementary-color2);
+}
+
+.accent-text2 {
+  color: var(--accent-color2);
+}
+
+.accent-text2:hover {
+  color: white;
+}
+
+.bg-danger {
+  background-color: var(--accent-color2) !important;
+}
+
+/* scrollbar */
+
+body {
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(
+    to bottom,
+    var(--complementary-color),
+    var(--complementary-color2)
+  );
+}
+
+/* navbar  */
+
+@media (max-width: 1200px) {
+  .navbar-1 .navbar-collapse {
+    width: 100vw;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--secondary-color) !important;
+    border-radius: 15px;
+  }
+  .navbar-1 .navbar-collapse ul {
+    gap: 10px;
+  }
+  .navbar-1 .navbar-collapse ul li {
+    padding: 9px;
+  }
+  .navbar-1 .navbar-collapse ul li:not(:last-child) {
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  .navbar-1 .dropdown-menu {
+    background-color: var(--secondary-color);
+    border: none;
+  }
+  .navbar-1 .dropdown-menu a {
+    color: #fff;
+  }
+}
+
+.navbar-1 {
+  z-index: 100;
+}
+
+.navbar-1 .dropdown-menu {
+  z-index: 200;
+}
+
+nav i,
+nav a {
+  font-style: normal;
+
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.navbar-1 {
+  background-color: #fff;
+}
+
+.currency {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* featured products */
+
+.h-scroll-parent {
+  overflow-x: auto;
+}
+
+.h-scroll-child {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.featured .card {
+  width: 15rem;
+  height: 25rem;
+  cursor: pointer;
+}
+
+.featured .card img {
+  height: 18rem;
+  object-fit: cover;
+  position: relative;
+}
+
+.product-btns {
+  position: absolute;
+  top: 7%;
+  right: 9%;
+}
+
+.product-btns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.featured h4 {
+  font-weight: 700;
+}
+
+.featured .card {
+  box-shadow: 1px 1px 10px #eee;
+}
+
+.currency {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* wishlist */
+
+.wishlist-img {
+  height: 12rem;
+  object-fit: cover;
+}
+
+/* card image */
+
+.card-img {
+  height: 13rem;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 756px) {
+  .card-img {
+    height: 19rem;
+    object-fit: cover;
+  }
+}
+
+/* cart */
+
+.cart-img {
+  height: 12rem;
+  width: 14rem;
+  object-fit: cover;
+}
+
+/* navbar 2 */
+
+.nav2 .nav-link {
+  white-space: nowrap;
+}
+
+.nav2 .navbar-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.nav2 .nav-item {
+  flex: 0 0 auto;
+}
+
+/* dropdown */
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--complementary-color2);
+  color: #fff;
+}
+
+.dropdown-menu .dropdown-item.active {
+  background-color: #2d4d5c;
+  color: #fff;
+}
+
+/* headers */
+
+h3 {
+  position: relative;
+  padding-bottom: 20px;
+  color: var(--complementary-color);
+}
+
+h3::after {
+  content: "";
+  display: block;
+  width: 5%;
+  height: 2px;
+  background-color: var(--accent-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* new card  */
+
+.product-card.card {
+  width: 16rem !important;
+}
+
+.product-card .card-body {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 6rem;
+}
+
+.product-card .card-body::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  /* background-image: url(../../assets/images/cup-hot-fill.svg); */
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 8rem;
+  z-index: 0; /* Make sure the pseudo-element is behind the content */
+  filter: brightness(0) invert(1) opacity(0.02);
+}
+
+.product-card .card-body * {
+  position: relative;
+  z-index: 1; /* Ensure other content is above the pseudo-element */
+}
+
+.bg-color {
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(58, 92, 108, 0.9),
+    rgba(43, 88, 118, 0.9)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: all 0.3s ease-in-out !important;
+  z-index: 300;
+}
+
+.card-btn-main {
+  background-color: var(--complementary-color) !important;
+}
+.card-btn-success {
+  background-color: #198754 !important;
+}
+
+.card-btn:first-child:hover {
+  filter: brightness(0.92);
+}
+
+.card-btn:active {
+  transform: scale(0.97);
+}
+
+.card-btn i {
+  display: flex;
+  justify-content: center;
+}
+
+.card:hover .card-img-top {
+  filter: brightness(0.7) !important;
+}
+
+.details {
+  visibility: hidden;
+}
+
+.product-card:hover .details {
+  visibility: visible;
+  background-color: rgba(31, 58, 75, 0.2);
+  /* z-index: 200; */
+}
